@@ -40,7 +40,7 @@ public class ProgrammerBook extends Book {
 	@Override
 	public int hashCode() {
 
-		return 123 + level * 13;
+		return 123 + level * 31;
 	}
 
 }

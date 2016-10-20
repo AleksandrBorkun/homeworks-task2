@@ -86,6 +86,11 @@ public class Book implements Cloneable, Comparable<Object>, Comparator<Book> {
 
 		
 		
-		return 0;
+		return o1.getTitle().compareTo(o2.getTitle());
+	}
+	
+	
+	public String getTitle() {
+		return title;
 	}
 }
