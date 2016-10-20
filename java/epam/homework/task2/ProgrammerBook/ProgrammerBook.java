@@ -34,7 +34,7 @@ public class ProgrammerBook extends Book {
 		if (this.getClass() != obj.getClass())
 			return false;
 		ProgrammerBook pBook = (ProgrammerBook) obj;
-		return this.hashCode() == pBook.hashCode();
+		return this.level == pBook.level;
 	}
 
 	@Override

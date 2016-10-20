@@ -1,8 +1,6 @@
 package epam.homework.task2.Book;
 
-import java.util.Comparator;
-
-public class Book implements Cloneable, Comparable<Object>, Comparator<Book> {
+public class Book implements Cloneable, Comparable<Object> {
 
 	private String title;
 
@@ -59,6 +57,7 @@ public class Book implements Cloneable, Comparable<Object>, Comparator<Book> {
 
 	}
 
+	@Override
 	public Book clone() throws CloneNotSupportedException {
 
 		Book cloneBook = (Book) super.clone();
@@ -66,6 +65,7 @@ public class Book implements Cloneable, Comparable<Object>, Comparator<Book> {
 
 	}
 
+	@Override
 	public int compareTo(Object obj) {
 
 		Book entry = (Book) obj;
@@ -82,14 +82,6 @@ public class Book implements Cloneable, Comparable<Object>, Comparator<Book> {
 		return isbn;
 	}
 
-	public int compare(Book o1, Book o2) {
-
-		
-		
-		return o1.getTitle().compareTo(o2.getTitle());
-	}
-	
-	
 	public String getTitle() {
 		return title;
 	}
